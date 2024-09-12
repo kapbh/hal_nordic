@@ -12,7 +12,9 @@
 #ifndef __FMAC_PEER_H__
 #define __FMAC_PEER_H__
 
+#ifndef NRF70_OFFLOADED_RAW_TX
 #include "fmac_structs.h"
+#endif
 
 int nrf_wifi_fmac_peer_get_id(struct nrf_wifi_fmac_dev_ctx *fmac_ctx,
 			      const unsigned char *mac_addr);

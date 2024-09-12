@@ -15,8 +15,9 @@
 #define __FMAC_TX_H__
 
 #include "host_rpu_data_if.h"
+#ifndef NRF70_OFFLOADED_RAW_TX
 #include "fmac_structs.h"
-
+#endif
 /**
  * @defgroup fmac_tx FMAC TX
  * @{

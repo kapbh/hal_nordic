@@ -13,8 +13,10 @@
 #define __FMAC_RX_H__
 
 #include "host_rpu_data_if.h"
+#ifndef NRF70_OFFLOADED_RAW_TX
 #include "fmac_structs.h"
-
+#endif
+#include "fmac_structs_common.h"
 #define RX_BUF_HEADROOM 4
 
 enum nrf_wifi_fmac_rx_cmd_type {

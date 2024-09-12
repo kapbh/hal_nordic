@@ -13,8 +13,9 @@
 #define __FMAC_AP_H__
 
 #include "host_rpu_data_if.h"
+#ifndef NRF70_OFFLOADED_RAW_TX
 #include "fmac_structs.h"
-
+#endif
 
 enum nrf_wifi_status sap_client_update_pmmode(struct nrf_wifi_fmac_dev_ctx *fmac_dev_ctx,
 					      struct nrf_wifi_sap_client_pwrsave *config);

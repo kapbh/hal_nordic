@@ -12,7 +12,9 @@
 #ifndef __FMAC_VIF_H__
 #define __FMAC_VIF_H__
 
+#ifndef NRF70_OFFLOADED_RAW_TX
 #include "fmac_structs.h"
+#endif
 
 int nrf_wifi_fmac_vif_check_if_limit(struct nrf_wifi_fmac_dev_ctx *fmac_dev_ctx,
 				     int if_type);

@@ -21,7 +21,10 @@
 #include "host_rpu_data_if.h"
 #include "host_rpu_sys_if.h"
 
+#ifndef NRF70_OFFLOADED_RAW_TX
 #include "fmac_structs.h"
+#endif
+
 #include "fmac_cmd.h"
 #include "fmac_event.h"
 #include "fmac_vif.h"
